@@ -10,8 +10,137 @@
     android:paddingTop="@dimen/activity_vertical_margin"
     tools:context="ntic.berrehal.oualaeddine.robot.MainMap">
 
-    <TextView
+    <LinearLayout
+        android:orientation="vertical"
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Hello World!" />
+        android:layout_height="match_parent">
+
+        <GridView
+            android:layout_width="match_parent"
+            android:layout_height="191dp"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:columnWidth="80dp"
+            android:numColumns="10"
+            android:verticalSpacing="10dp"
+            android:horizontalSpacing="10dp"
+            android:stretchMode="columnWidth"
+            android:layout_weight="1"
+            android:id="@+id/main_GridView" />
+
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:baselineAligned="false">
+
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" >
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <TextView
+                        android:text="Vitesse"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/Vitesse_textView" />
+
+                    <SeekBar
+                        android:layout_width="311dp"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/Vitesse_seekBar"
+                        android:max="100"
+                        android:progress="35" />
+
+                </LinearLayout>
+
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" >
+
+                <TextView
+                    android:text="Destination:"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/Destination_textView"
+                    android:layout_weight="1" />
+
+                <RadioButton
+                    android:text="N"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/Nradio"
+                    android:layout_weight="1" />
+
+                <RadioButton
+                    android:text="S"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/Sradio"
+                    android:layout_weight="1" />
+
+                <RadioButton
+                    android:text="E"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/Eradio"
+                    android:layout_weight="1" />
+
+                <RadioButton
+                    android:text="O"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/Oradio"
+                    android:layout_weight="1" />
+
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" >
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <TextView
+                        android:text="Energie:"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/Power_textView" />
+
+                    <ProgressBar
+                        style="?android:attr/progressBarStyleHorizontal"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/progressBar2"
+                        android:layout_weight="1"
+                        android:progress="100"
+                        android:max="100" />
+
+                </LinearLayout>
+
+            </TableRow>
+        </TableLayout>
+
+        <Button
+            android:text="Deplacer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/buttonDeplacer" />
+
+    </LinearLayout>
+
 </RelativeLayout>
