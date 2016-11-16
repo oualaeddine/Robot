@@ -3,7 +3,8 @@ package ntic.berrehal.oualaeddine.robot;
 public class RobotAutonome extends Robot {
 
 	private int vitesse;
-	
+	private Integer robotImg = R.drawable.hi;
+
 	public RobotAutonome() {
 
 		vitesse = 0;
@@ -50,4 +51,9 @@ public class RobotAutonome extends Robot {
 	public void accelerer() {
 		vitesse++;
 	}
+
+    public Integer getRobotImg() {
+        return robotImg;
+    }
 }
+

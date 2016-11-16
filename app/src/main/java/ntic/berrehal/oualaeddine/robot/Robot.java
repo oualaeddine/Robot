@@ -8,6 +8,7 @@ public abstract class Robot {
 	enum Direction {Nord,Sud,Est,Ouest};
 	Direction direction;
 	Map map;
+
 	
 	public Robot(){
 		position = new Position (0,0);
