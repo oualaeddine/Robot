@@ -1,5 +1,4 @@
-package ntic.berrehal.oualaeddine.robot;
-
+package ntic.berrehal.oualaeddine.robot.das;
 public class Position {
 
 	private int x;
@@ -24,5 +23,9 @@ public class Position {
 		this.y = y;
 	}
 	
+	@Override
+	public String toString(){
+		return "("+x+","+y+")";
+	}
 	
 }

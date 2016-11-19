@@ -1,14 +1,11 @@
-package ntic.berrehal.oualaeddine.robot;
-
+package ntic.berrehal.oualaeddine.robot.das;
 public abstract class Robot {
 
 	String nom;
-	int vitesse;
 	Position position;
 	enum Direction {Nord,Sud,Est,Ouest};
 	Direction direction;
 	Map map;
-
 	
 	public Robot(){
 		position = new Position (0,0);
@@ -19,10 +16,9 @@ public abstract class Robot {
 		this.nom = nom;
 	}
 	
-	public Robot(String nom, int vitesse, Position position, Direction direction) {
+	public Robot(String nom,Position position, Direction direction) {
 		super();
 		this.nom = nom;
-		this.vitesse = vitesse;
 		this.position = position;
 		this.direction = direction;
 	}
@@ -56,7 +52,7 @@ public abstract class Robot {
 	Position getPosition() {
 		return position;
 	}
-	String setPresenter(){
-		return "Nom:"+nom+"position:"+position;
+	String sePresenter(){
+		return "Nom:"+nom+"\tposition:"+position;
 	}
 }

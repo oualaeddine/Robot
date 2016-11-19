@@ -1,9 +1,7 @@
-package ntic.berrehal.oualaeddine.robot;
-
+package ntic.berrehal.oualaeddine.robot.das;
 public class RobotProgramme extends Robot {
-
 	public RobotProgramme() {
-
+		super();
 	}
 
 	@Override
@@ -41,12 +39,13 @@ public class RobotProgramme extends Robot {
 
 	@Override
 	void stop() {
-
+		position.setX(0);
+		position.setY(0);
 	}
 
 	@Override
 	void demarrer() {
-
+		System.out.println("Je suis pr�t");
 	}
 
 }

@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/activity_main_map"
     android:layout_width="match_parent"
@@ -13,20 +14,823 @@
     <LinearLayout
         android:orientation="vertical"
         android:layout_width="wrap_content"
-        android:layout_height="match_parent">
+        android:layout_height="match_parent"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
 
-        <GridView
+        <TableLayout
             android:layout_width="match_parent"
-            android:layout_height="191dp"
-            android:layout_alignParentRight="true"
-            android:layout_alignParentEnd="true"
-            android:columnWidth="80dp"
-            android:numColumns="10"
-            android:verticalSpacing="10dp"
-            android:horizontalSpacing="10dp"
-            android:stretchMode="columnWidth"
+            android:layout_height="0dp"
             android:layout_weight="1"
-            android:id="@+id/main_GridView" />
+            android:background="@color/colorPrimary"
+            android:stretchColumns="10"
+            android:shrinkColumns="10">
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                
+                android:orientation="vertical"
+                android:baselineAligned="false"
+                android:layout_weight="1">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    app:srcCompat="@drawable/cell_shape"
+
+                    android:layout_weight="1"
+                    android:scaleType="fitXY" />
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                   app:srcCompat="@drawable/cell_shape"
+
+                    android:layout_weight="1"
+                    android:scaleType="fitXY" />
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                   app:srcCompat="@drawable/cell_shape"
+
+                    android:layout_weight="1"
+                    android:scaleType="fitXY" />
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                   app:srcCompat="@drawable/cell_shape"
+
+                    android:layout_weight="1"
+                    android:scaleType="fitXY" />
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                   app:srcCompat="@drawable/cell_shape"
+
+                    android:layout_weight="1"
+                    android:scaleType="fitXY" />
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                   app:srcCompat="@drawable/cell_shape"
+
+                    android:layout_weight="1"
+                    android:scaleType="fitXY" />
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                   app:srcCompat="@drawable/cell_shape"
+
+                    android:layout_weight="1"
+                    android:scaleType="fitXY" />
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                   app:srcCompat="@drawable/cell_shape"
+
+                    android:layout_weight="1"
+                    android:scaleType="fitXY" />
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                   app:srcCompat="@drawable/cell_shape"
+
+                    android:layout_weight="1"
+                    android:scaleType="fitXY" />
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                   app:srcCompat="@drawable/cell_shape"
+
+                    android:layout_weight="1"
+                    android:scaleType="fitXY" />
+            </TableRow>
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+
+                android:background="?attr/colorButtonNormal"
+                android:orientation="vertical"
+                android:baselineAligned="false"
+                android:layout_weight="1">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                   app:srcCompat="@drawable/cell_shape"
+
+                    android:layout_weight="1"
+                    android:scaleType="fitXY" />
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                   app:srcCompat="@drawable/cell_shape"
+
+                    android:layout_weight="1"
+                    android:scaleType="fitXY" />
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                   app:srcCompat="@drawable/cell_shape"
+
+                    android:layout_weight="1"
+                    android:scaleType="fitXY" />
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                   app:srcCompat="@drawable/cell_shape"
+
+                    android:layout_weight="1"
+                    android:scaleType="fitXY" />
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                   app:srcCompat="@drawable/cell_shape"
+
+                    android:layout_weight="1"
+                    android:scaleType="fitXY" />
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                   app:srcCompat="@drawable/cell_shape"
+
+                    android:layout_weight="1"
+                    android:scaleType="fitXY" />
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                   app:srcCompat="@drawable/cell_shape"
+
+                    android:layout_weight="1"
+                    android:scaleType="fitXY" />
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                   app:srcCompat="@drawable/cell_shape"
+
+                    android:layout_weight="1"
+                    android:scaleType="fitXY" />
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                   app:srcCompat="@drawable/cell_shape"
+
+                    android:layout_weight="1"
+                    android:scaleType="fitXY" />
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                   app:srcCompat="@drawable/cell_shape"
+
+                    android:layout_weight="1"
+                    android:scaleType="fitXY" />
+            </TableRow>
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+
+                android:background="?attr/colorButtonNormal"
+                android:orientation="vertical"
+                android:baselineAligned="false"
+                android:layout_weight="1">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                   app:srcCompat="@drawable/cell_shape"
+
+                    android:layout_weight="1"
+                    android:scaleType="fitXY" />
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                   app:srcCompat="@drawable/cell_shape"
+
+                    android:layout_weight="1"
+                    android:scaleType="fitXY" />
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                   app:srcCompat="@drawable/cell_shape"
+
+                    android:layout_weight="1"
+                    android:scaleType="fitXY" />
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                   app:srcCompat="@drawable/cell_shape"
+
+                    android:layout_weight="1"
+                    android:scaleType="fitXY" />
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                   app:srcCompat="@drawable/cell_shape"
+
+                    android:layout_weight="1"
+                    android:scaleType="fitXY" />
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                   app:srcCompat="@drawable/cell_shape"
+
+                    android:layout_weight="1"
+                    android:scaleType="fitXY" />
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                   app:srcCompat="@drawable/cell_shape"
+
+                    android:layout_weight="1"
+                    android:scaleType="fitXY" />
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                   app:srcCompat="@drawable/cell_shape"
+
+                    android:layout_weight="1"
+                    android:scaleType="fitXY" />
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                   app:srcCompat="@drawable/cell_shape"
+
+                    android:layout_weight="1"
+                    android:scaleType="fitXY" />
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                   app:srcCompat="@drawable/cell_shape"
+
+                    android:layout_weight="1"
+                    android:scaleType="fitXY" />
+            </TableRow>
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+
+                android:background="?attr/colorButtonNormal"
+                android:orientation="vertical"
+                android:baselineAligned="false"
+                android:layout_weight="1">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                   app:srcCompat="@drawable/cell_shape"
+
+                    android:layout_weight="1"
+                    android:scaleType="fitXY" />
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                   app:srcCompat="@drawable/cell_shape"
+
+                    android:layout_weight="1"
+                    android:scaleType="fitXY" />
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                   app:srcCompat="@drawable/cell_shape"
+
+                    android:layout_weight="1"
+                    android:scaleType="fitXY" />
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                   app:srcCompat="@drawable/cell_shape"
+
+                    android:layout_weight="1"
+                    android:scaleType="fitXY" />
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                   app:srcCompat="@drawable/cell_shape"
+
+                    android:layout_weight="1"
+                    android:scaleType="fitXY" />
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                   app:srcCompat="@drawable/cell_shape"
+
+                    android:layout_weight="1"
+                    android:scaleType="fitXY" />
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                   app:srcCompat="@drawable/cell_shape"
+
+                    android:layout_weight="1"
+                    android:scaleType="fitXY" />
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                   app:srcCompat="@drawable/cell_shape"
+
+                    android:layout_weight="1"
+                    android:scaleType="fitXY" />
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                   app:srcCompat="@drawable/cell_shape"
+
+                    android:layout_weight="1"
+                    android:scaleType="fitXY" />
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                   app:srcCompat="@drawable/cell_shape"
+
+                    android:layout_weight="1"
+                    android:scaleType="fitXY" />
+            </TableRow>
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+
+                android:background="?attr/colorButtonNormal"
+                android:orientation="vertical"
+                android:baselineAligned="false"
+                android:layout_weight="1">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                   app:srcCompat="@drawable/cell_shape"
+
+                    android:layout_weight="1"
+                    android:scaleType="fitXY" />
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                   app:srcCompat="@drawable/cell_shape"
+
+                    android:layout_weight="1"
+                    android:scaleType="fitXY" />
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                   app:srcCompat="@drawable/cell_shape"
+
+                    android:layout_weight="1"
+                    android:scaleType="fitXY" />
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                   app:srcCompat="@drawable/cell_shape"
+
+                    android:layout_weight="1"
+                    android:scaleType="centerCrop" />
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                   app:srcCompat="@drawable/cell_shape"
+
+                    android:layout_weight="1"
+                    android:scaleType="fitXY" />
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                   app:srcCompat="@drawable/cell_shape"
+
+                    android:layout_weight="1"
+                    android:scaleType="fitXY" />
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                   app:srcCompat="@drawable/cell_shape"
+
+                    android:layout_weight="1"
+                    android:scaleType="fitXY" />
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                   app:srcCompat="@drawable/cell_shape"
+
+                    android:layout_weight="1"
+                    android:scaleType="fitXY" />
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                   app:srcCompat="@drawable/cell_shape"
+
+                    android:layout_weight="1"
+                    android:scaleType="fitXY" />
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                   app:srcCompat="@drawable/cell_shape"
+
+                    android:layout_weight="1"
+                    android:scaleType="fitXY" />
+            </TableRow>
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+
+                android:background="?attr/colorButtonNormal"
+                android:orientation="vertical"
+                android:baselineAligned="false"
+                android:layout_weight="1">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                   app:srcCompat="@drawable/cell_shape"
+
+                    android:layout_weight="1"
+                    android:scaleType="fitXY" />
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                   app:srcCompat="@drawable/cell_shape"
+
+                    android:layout_weight="1"
+                    android:scaleType="fitXY" />
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                   app:srcCompat="@drawable/cell_shape"
+
+                    android:layout_weight="1"
+                    android:scaleType="fitXY" />
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                   app:srcCompat="@drawable/cell_shape"
+
+                    android:layout_weight="1"
+                    android:scaleType="fitXY" />
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                   app:srcCompat="@drawable/cell_shape"
+
+                    android:layout_weight="1"
+                    android:scaleType="fitXY" />
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                   app:srcCompat="@drawable/cell_shape"
+
+                    android:layout_weight="1"
+                    android:scaleType="fitXY" />
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                   app:srcCompat="@drawable/cell_shape"
+
+                    android:layout_weight="1"
+                    android:scaleType="fitXY" />
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                   app:srcCompat="@drawable/cell_shape"
+
+                    android:layout_weight="1"
+                    android:scaleType="fitXY" />
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                   app:srcCompat="@drawable/cell_shape"
+
+                    android:layout_weight="1"
+                    android:scaleType="fitXY" />
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                   app:srcCompat="@drawable/cell_shape"
+
+                    android:layout_weight="1"
+                    android:scaleType="fitXY" />
+            </TableRow>
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+
+                android:background="?attr/colorButtonNormal"
+                android:orientation="vertical"
+                android:baselineAligned="false"
+                android:layout_weight="1">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                   app:srcCompat="@drawable/cell_shape"
+
+                    android:layout_weight="1"
+                    android:scaleType="fitXY" />
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                   app:srcCompat="@drawable/cell_shape"
+
+                    android:layout_weight="1"
+                    android:scaleType="fitXY" />
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                   app:srcCompat="@drawable/cell_shape"
+
+                    android:layout_weight="1"
+                    android:scaleType="fitXY" />
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                   app:srcCompat="@drawable/cell_shape"
+
+                    android:layout_weight="1"
+                    android:scaleType="fitXY" />
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                   app:srcCompat="@drawable/cell_shape"
+
+                    android:layout_weight="1"
+                    android:scaleType="fitXY"
+                    android:adjustViewBounds="false" />
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                   app:srcCompat="@drawable/cell_shape"
+
+                    android:layout_weight="1"
+                    android:scaleType="centerInside" />
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                   app:srcCompat="@drawable/cell_shape"
+
+                    android:layout_weight="1"
+                    android:scaleType="fitXY" />
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                   app:srcCompat="@drawable/cell_shape"
+
+                    android:layout_weight="1"
+                    android:scaleType="fitXY" />
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                   app:srcCompat="@drawable/cell_shape"
+
+                    android:layout_weight="1"
+                    android:scaleType="fitXY" />
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                   app:srcCompat="@drawable/cell_shape"
+
+                    android:layout_weight="1"
+                    android:scaleType="fitXY" />
+            </TableRow>
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+
+                android:background="?attr/colorButtonNormal"
+                android:orientation="vertical"
+                android:baselineAligned="false"
+                android:layout_weight="1">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                   app:srcCompat="@drawable/cell_shape"
+
+                    android:layout_weight="1"
+                    android:scaleType="fitXY" />
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                   app:srcCompat="@drawable/cell_shape"
+
+                    android:layout_weight="1"
+                    android:scaleType="fitXY" />
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                   app:srcCompat="@drawable/cell_shape"
+
+                    android:layout_weight="1"
+                    android:scaleType="fitXY" />
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                   app:srcCompat="@drawable/cell_shape"
+
+                    android:layout_weight="1"
+                    android:scaleType="fitXY" />
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                   app:srcCompat="@drawable/cell_shape"
+
+                    android:layout_weight="1"
+                    android:scaleType="fitXY" />
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                   app:srcCompat="@drawable/cell_shape"
+
+                    android:layout_weight="1"
+                    android:scaleType="fitXY" />
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                   app:srcCompat="@drawable/cell_shape"
+
+                    android:layout_weight="1"
+                    android:scaleType="fitXY" />
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                   app:srcCompat="@drawable/cell_shape"
+
+                    android:layout_weight="1"
+                    android:scaleType="fitXY" />
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                   app:srcCompat="@drawable/cell_shape"
+
+                    android:layout_weight="1"
+                    android:scaleType="fitXY" />
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                   app:srcCompat="@drawable/cell_shape"
+
+                    android:layout_weight="1"
+                    android:scaleType="fitXY" />
+            </TableRow>
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+
+                android:background="?attr/colorButtonNormal"
+                android:orientation="vertical"
+                android:baselineAligned="false"
+                android:layout_weight="1">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                   app:srcCompat="@drawable/cell_shape"
+
+                    android:layout_weight="1"
+                    android:scaleType="fitXY" />
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                   app:srcCompat="@drawable/cell_shape"
+
+                    android:layout_weight="1"
+                    android:scaleType="fitXY" />
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                   app:srcCompat="@drawable/cell_shape"
+
+                    android:layout_weight="1"
+                    android:scaleType="fitXY" />
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                   app:srcCompat="@drawable/cell_shape"
+
+                    android:layout_weight="1"
+                    android:scaleType="fitXY" />
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                   app:srcCompat="@drawable/cell_shape"
+
+                    android:layout_weight="1"
+                    android:scaleType="fitXY" />
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                   app:srcCompat="@drawable/cell_shape"
+
+                    android:layout_weight="1"
+                    android:scaleType="fitXY" />
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                   app:srcCompat="@drawable/cell_shape"
+
+                    android:layout_weight="1"
+                    android:scaleType="fitXY" />
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                   app:srcCompat="@drawable/cell_shape"
+
+                    android:layout_weight="1"
+                    android:scaleType="fitXY" />
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                   app:srcCompat="@drawable/cell_shape"
+
+                    android:layout_weight="1"
+                    android:scaleType="fitXY" />
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                   app:srcCompat="@drawable/cell_shape"
+
+                    android:layout_weight="1"
+                    android:scaleType="fitXY" />
+            </TableRow>
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+
+                android:background="?attr/colorButtonNormal"
+                android:orientation="vertical"
+                android:baselineAligned="false"
+                android:layout_weight="1">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                   app:srcCompat="@drawable/cell_shape"
+
+                    android:layout_weight="1"
+                    android:scaleType="fitXY" />
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                   app:srcCompat="@drawable/cell_shape"
+
+                    android:layout_weight="1"
+                    android:scaleType="fitXY" />
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                   app:srcCompat="@drawable/cell_shape"
+
+                    android:layout_weight="1"
+                    android:scaleType="fitXY" />
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                   app:srcCompat="@drawable/cell_shape"
+
+                    android:layout_weight="1"
+                    android:scaleType="fitXY" />
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                   app:srcCompat="@drawable/cell_shape"
+
+                    android:layout_weight="1"
+                    android:scaleType="fitXY" />
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                   app:srcCompat="@drawable/cell_shape"
+
+                    android:layout_weight="1"
+                    android:scaleType="fitXY" />
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                   app:srcCompat="@drawable/cell_shape"
+
+                    android:layout_weight="1"
+                    android:scaleType="fitXY" />
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                   app:srcCompat="@drawable/cell_shape"
+
+                    android:layout_weight="1"
+                    android:scaleType="fitXY" />
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                   app:srcCompat="@drawable/cell_shape"
+
+                    android:layout_weight="1"
+                    android:scaleType="fitXY" />
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                   app:srcCompat="@drawable/cell_shape"
+
+                    android:layout_weight="1"
+                    android:scaleType="fitXY" />
+            </TableRow>
+
+
+
+        </TableLayout>
 
         <TableLayout
             android:layout_width="match_parent"
@@ -74,6 +878,7 @@
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:id="@+id/Destination_textView"
+                    android:singleLine="true"
                     android:layout_weight="1" />
 
                 <RadioButton
