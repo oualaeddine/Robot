@@ -49,10 +49,10 @@ public abstract class Robot {
 		}
 	}
 	
-	Position getPosition() {
+	public Position getPosition() {
 		return position;
 	}
-	String sePresenter(){
+	public String sePresenter(){
 		return "Nom:"+nom+"\tposition:"+position;
 	}
 }

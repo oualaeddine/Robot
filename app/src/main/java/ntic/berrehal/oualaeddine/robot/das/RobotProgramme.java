@@ -5,12 +5,12 @@ public class RobotProgramme extends Robot {
 	}
 
 	@Override
-	void deplacerEst() {
+	public void deplacerEst() {
 		position.setX(position.getX()+1);
 	}
 
 	@Override
-	void deplacerOuest() {
+	public void deplacerOuest() {
 
 		if (position.getX()-1<=0){
 			stop();
@@ -20,7 +20,7 @@ public class RobotProgramme extends Robot {
 	}
 
 	@Override
-	void deplacerNord() {
+	public void deplacerNord() {
 		if (position.getY()+1<=map.getYrange()){
 			stop();
 		}else{
@@ -29,7 +29,7 @@ public class RobotProgramme extends Robot {
 	}
 
 	@Override
-	void deplacerSud() {
+	public void deplacerSud() {
 		if (position.getY()-1<=0){
 			stop();
 		}else{
@@ -38,13 +38,13 @@ public class RobotProgramme extends Robot {
 	}
 
 	@Override
-	void stop() {
+	public void stop() {
 		position.setX(0);
 		position.setY(0);
 	}
 
 	@Override
-	void demarrer() {
+	public void demarrer() {
 		System.out.println("Je suis pr�t");
 	}
 
